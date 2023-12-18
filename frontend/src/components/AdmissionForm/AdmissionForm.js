@@ -35,7 +35,7 @@ const AdmissionForm = () => {
 
     // If validation passes, send the data to the backend
     try {
-      const response = await fetch('http://localhost:3001/api/admission/submit', {
+      const response = await fetch('https://yoga-26p2.onrender.com/api/admission/submit', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
