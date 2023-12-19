@@ -7,20 +7,19 @@ const app = express();
 app.use(cors());
 const PORT = process.env.PORT || 3001;
 
-// Initialize Supabase client
+//initializing supabase client
 const supabase = supabaseConfig();
 
-// Middleware
 app.use(express.json());
 
-// Routes
+//api route
 app.route('/api/admission/submit')
   .get((req, res) => {
-    // Handle GET request (if needed)
+    //handling GET request
     res.status(200).json({ message: 'GET request received for /api/admission/submit' });
   })
   .post(async (req, res) => {
-    // Handle POST request using the admissionFormController logic
+    //handling POST request using the admissionFormController
     try {
       const { submitForm } = require('./controllers/admissionFormController');
       await submitForm(req, res, supabase);
@@ -30,7 +29,6 @@ app.route('/api/admission/submit')
     }
   });
 
-// Start the server
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

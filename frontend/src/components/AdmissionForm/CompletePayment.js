@@ -5,17 +5,17 @@ const CompletePayment = async (userId, paymentAmount) => {
     const supabaseUrl = 'https://onlihwgmrptveygkgodk.supabase.co';
     const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9ubGlod2dtcnB0dmV5Z2tnb2RrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI4ODY4MjQsImV4cCI6MjAxODQ2MjgyNH0.gnRM8o9OCQm0rW9Rfn1Hisw2p-yGarzYpQluBvLg7BA';
 
-    // Create Supabase client
+    //creating a supabase client
     const supabase = createClient(supabaseUrl, supabaseKey);
 
-    // Assume payment is successful
+    //assuming payment is successful
     const paymentResponse = {
       success: true,
       message: `Payment of Rs${paymentAmount} is successful.`,
       transactionId: 'mockTransactionId', // Mock transaction ID
     };
 
-    // Update Supabase table with payment details
+    //updating supabase tabke with payment details
     const { data, error } = await supabase
       .from('payments')
       .insert({

@@ -7,22 +7,22 @@ const submitForm = async (req, res) => {
   try {
     const { name, age, selectedBatch,batch } = req.body;
 
-    // Validate name (assuming name is a non-empty string)
+    // vaildation of name, if an empty string is passed
     if (!name || typeof name !== 'string' || name.trim() === '') {
         return res.status(400).json({ error: 'Invalid name. Must be a non-empty string.' });
       }
 
-    // Validate age (assuming age is a number)
+    // validation of age, if an empty string is passed
     if (isNaN(age) || age < 18 || age > 65) {
       return res.status(400).json({ error: 'Invalid age. Must be between 18 and 65.' });
     }
 
-    // Check if the selected batch is in the list of valid batches
+    // checking if batch is valid 
     if (!validBatches.includes(selectedBatch)) {
         return res.status(400).json({ error: 'Invalid batch selection.' });
       }
 
-    // Insert the form data into the 'admission_forms' table in Supabase
+    // inserting data in admission_forms table of supabase
     const { data, error } = await supabase.from('admission_forms').insert({
       name,
       age,
@@ -45,7 +45,6 @@ const submitForm = async (req, res) => {
         return res.status(500).json({ error: 'Error inserting batch data.' });
       }
 
-    // Return success response with the inserted data
     res.status(200).json({ success: true, data });
   } catch (error) {
     console.error(error);

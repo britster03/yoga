@@ -1,4 +1,4 @@
-// db/supabaseConfig.js
+//config info of supabase project 
 
 const { createClient } = require('@supabase/supabase-js');
 
