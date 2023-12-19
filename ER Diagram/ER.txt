@@ -1,0 +1,17 @@
+Relationships:
+
+Profiles - Admission Forms:
+One-to-Many (1:N)
+A user (profile) can submit multiple admission forms, but each admission form is associated with only one user.
+
+
+Admission Forms - Batches:
+Many-to-One (N:1)
+Multiple admission forms can be associated with the same batch, but each admission form is related to only one batch.
+Represented by a foreign key in the Admission Forms table (batch_id) pointing to the id in the Batches table.
+
+
+Admission Forms - Payments:
+One-to-One (1:1)
+Each admission form is associated with one payment record, and each payment record is related to one admission form.
+Represented by a foreign key in the Payments table (admission_form_id) pointing to the id in the Admission Forms table.
