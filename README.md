@@ -9,6 +9,7 @@ To know more about Supabase it provides a full Postgres database for every proje
 
 - User-friendly interface for submitting yoga class admission forms.
 - Integration with Supabase for storing form data and batch information.
+- Integrated authentication with Google Sign-in powered by Supabase. 
 - REST API for handling form submissions and interacting with the database.
 - Docker containerization for easy deployment.
 
