@@ -5,6 +5,7 @@
 This project is a web application for managing yoga classes. It consists of a frontend built with React, a backend using Node.js and Express, and it interacts with Supabase as the database. 
 To know more about Supabase it provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.
 
+(While executing operations on the website, kindly wait for a minute after submitting form details, the deployed server might take a minute to respond.)
 ## Features
 
 - User-friendly interface for submitting yoga class admission forms.
