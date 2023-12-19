@@ -85,8 +85,11 @@ To deploy this app as a Docker container, you will need to have Docker installed
 
 This section provides a step-by-step guide for Docker deployment, including logging in, pulling the image, running the container, stopping the container, and cleaning up. Adjust the commands and instructions based on your specific requirements.
 
+## ER Diagram for Database Design:
 
-    
+More description on ER Diagrams in folder (ER Diagram), ref ER.txt
+
+![Alt text](image.png)  
 
 
 ## Accessing the App
@@ -103,6 +106,6 @@ This section provides a step-by-step guide for Docker deployment, including logg
 
 Feel free to contribute to this project by opening issues or submitting pull requests. Your feedback and contributions are highly appreciated!
 
-![Alt text](image.png)
+
 
 
