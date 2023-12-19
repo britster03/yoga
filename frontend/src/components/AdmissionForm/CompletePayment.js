@@ -12,7 +12,7 @@ const CompletePayment = async (userId, paymentAmount) => {
     const paymentResponse = {
       success: true,
       message: `Payment of Rs${paymentAmount} is successful.`,
-      transactionId: 'mockTransactionId', // Mock transaction ID
+      transactionId: 'mockTransactionId', //assuming a mock transaction id
     };
 
     //updating supabase tabke with payment details

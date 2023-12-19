@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {createClient} from '@supabase/supabase-js';
+
+const supabase = createClient(
+  'https://rquwntqrmfmwtzzlbjci.supabase.co',
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJxdXdudHFybWZtd3R6emxiamNpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDExMDYzNTEsImV4cCI6MjAxNjY4MjM1MX0.szFlkP1hTlddGoE8akJrt78fCjB1XVIhWF8ZrKCoxZw',  
+)
 
 const AdmissionForm = () => {
   const [formData, setFormData] = useState({
@@ -65,6 +71,26 @@ const AdmissionForm = () => {
     }
   }, [submitted, navigate]);
 
+
+  //user retrieval logic begins
+
+  const [user,setUser] = useState({});
+
+  useEffect(()=>{
+      async function getUserData() {
+          await supabase.auth.getUser().then((value) => {
+              if(value.data?.user){
+                  console.log(value.data.user);
+                  setUser(value.data.user);
+              }
+          })
+      }
+      getUserData();
+  }, []);
+
+
+
+ //end
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
 
