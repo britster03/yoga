@@ -58,7 +58,7 @@ To deploy this app as a Docker container, you will need to have Docker installed
 
     The docker containerization has already been taken care of, so you can jump to below steps!
 
-### Logging in to Docker Hub
+## Logging in to Docker Hub
 1. Open your terminal or command prompt.
 2. Run the following command to log in to Docker Hub:
    ```bash
