@@ -1,4 +1,40 @@
-Relationships:
+---- Profiles Entity -----
+
+Attributes:
+id (Primary Key): Unique identifier for each user profile.
+updated_at: Timestamp indicating the last update time.
+full_name: Full name of the user.
+avatar_url: URL pointing to the user's avatar.
+
+
+Admission_Forms Entity:
+
+Attributes:
+id (Primary Key): Unique identifier for each admission form.
+name: Name of the individual submitting the form.
+age: Age of the individual submitting the form.
+selected_batch: The batch selected by the individual.
+submission_time: Timestamp indicating when the form was submitted.
+
+
+Batches Entity:
+
+Attributes:
+id (Primary Key): Unique identifier for each batch.
+name: Name of the individual submitting the form.
+batch: Batch identifier (e.g., time slot).
+
+
+Payments Entity:
+
+Attributes:
+id (Primary Key): Unique identifier for each payment record.
+name: Name of the individual making the payment.
+transaction_id: Unique identifier for the payment transaction.
+payment_time: Timestamp indicating when the payment was made.
+
+
+---- Relationships: -----
 
 Profiles - Admission Forms:
 One-to-Many (1:N)
