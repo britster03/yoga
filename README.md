@@ -82,6 +82,8 @@ To deploy this app as a Docker container, you will need to have Docker installed
 
 
 This section provides a step-by-step guide for Docker deployment, including logging in, pulling the image, running the container, stopping the container, and cleaning up. Adjust the commands and instructions based on your specific requirements.
+
+
     
 
 
@@ -89,6 +91,7 @@ This section provides a step-by-step guide for Docker deployment, including logg
 
 - Frontend: http://localhost:3000 or https://form-bvx3.onrender.com/
 - Backend (API): http://localhost:3001 or https://yoga-26p2.onrender.com/api/admission/submit
+- Docker Hub (Container): https://hub.docker.com/r/ronny03/reactimgg
 
 ## REST API Endpoints
 
