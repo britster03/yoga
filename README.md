@@ -90,7 +90,7 @@ This section provides a step-by-step guide for Docker deployment, including logg
 
 More description on ER Diagrams in folder (ER Diagram), ref ER.txt
 
-   ![flex](flex.png) 
+![flex] (flex.png) 
 
 ## Accessing the App
 
