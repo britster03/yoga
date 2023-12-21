@@ -1,6 +1,5 @@
 # Yoga Classes App
 
-![text](flex.png)
 
 ## Overview
 
