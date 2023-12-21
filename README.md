@@ -1,5 +1,7 @@
 # Yoga Classes App
 
+![text](flex.png)
+
 ## Overview
 
 This project is a web application for managing yoga classes. It consists of a frontend built with React, a backend using Node.js and Express, and it interacts with Supabase as the database. 
@@ -89,7 +91,7 @@ This section provides a step-by-step guide for Docker deployment, including logg
 
 More description on ER Diagrams in folder (ER Diagram), ref ER.txt
 
-![text](flex.png)  
+ 
 
 
 ## Accessing the App
