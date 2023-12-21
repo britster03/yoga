@@ -91,7 +91,7 @@ More description on ER Diagrams in folder (ER Diagram), ref ER.txt
 
   
 
-![Alt text](flex.drawio.png)  
+![Alt text](image.png)  
 
 ## Accessing the App
 
