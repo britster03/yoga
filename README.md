@@ -89,8 +89,7 @@ This section provides a step-by-step guide for Docker deployment, including logg
 
 More description on ER Diagrams in folder (ER Diagram), ref ER.txt
 
-
-![plot!](D:\flexmoney\yoga\flex.drawio.png)  
+![Alt text](image.png)  
 
 
 ## Accessing the App
@@ -110,3 +109,4 @@ Feel free to contribute to this project by opening issues or submitting pull req
 
 
 
+![Alt text](image.png)  
