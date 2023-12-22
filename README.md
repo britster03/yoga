@@ -91,6 +91,8 @@ This section provides a step-by-step guide for Docker deployment, including logg
 More description on ER Diagrams in folder (ER Diagram), ref ER.txt
 
 ![Alt text](flexERDiagram.png)
+
+
 ![Alt text](DatabaseDesignFlex.png)
 
 ## Accessing the App
